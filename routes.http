@@ -23,5 +23,19 @@ Content-Type: application/json
 
 
 {
-    "prompt": "music song "
+    "prompt": "futebol haland "
+}
+
+
+### 
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+
+{
+    "videoId": "4132b118-4513-4da2-8a91-607732c9433e",
+    "temperature":0.1,
+    "template":"Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}''' "
 }
